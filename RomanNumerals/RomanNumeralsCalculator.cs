@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace RomanNumerals
 {
-    public class RomanNumeralBuilder
+    public class RomanNumeralBuilder : IDisposable
     {
         private string _romanNumeralOuput;
         public string RomanNumeralOutput
