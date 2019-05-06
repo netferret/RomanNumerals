@@ -37,6 +37,11 @@ namespace RomanNumerals
             return input;
         }
 
+        public void Dispose()
+        {
+            _romanNumeralOuput = null;
+        }
+
         enum RomanNumerals : int
         {
             I = 1,
