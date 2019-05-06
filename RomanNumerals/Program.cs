@@ -6,6 +6,7 @@ namespace RomanNumerals
 {
     public class Program
     {
+        // Maybe move this to another class and structure better, however this is just a kata.
         public static string RomanNumeralOutput { get; set; }
         static void Main(string[] args)
         {
