@@ -11,10 +11,10 @@ namespace RomanNumerals.Test
         [InlineData(273, "CCLXXIII")]
         public void TestRomanNumerals(int input, string expectedResult)
         {
-            Program.RomanNumeralOutput = string.Empty;
-            Program.CalculateRomanNumerals(input);
+            var builder = new RomanNumeralBuilder();
+            builder.CalculateRomanNumerals(input);
 
-            Assert.Equal(Program.RomanNumeralOutput, expectedResult);
+            Assert.Equal(builder.RomanNumeralOutput, expectedResult);
         }
     }
 }
